@@ -32,7 +32,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'NeoR';
-    color: #070707;
+    
 }
 
 ul {list-style: none;}
@@ -68,8 +68,8 @@ a {
 
   body {
     overflow-x: hidden;
-    overflow-y: hidden
-    /* height: 9226px !important; */
+    overflow-y: hidden;
+    height: auto !important;
   }
 /* ----------초기설정---------- */
 
@@ -85,8 +85,8 @@ header > .wrap {
     width: 95%;
     height: 40px;
     margin: 20px auto 0;
-    border-top: 3px solid black;
-    border-bottom: 1px solid black;
+    border-top: 3px solid #070707;
+    border-bottom: 1px solid #070707;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -94,15 +94,18 @@ header > .wrap {
     font-family: 'NeoVariable';
     font-size: 14px;
     font-weight: 600;
+    mix-blend-mode: difference;
 }
 header > .wrap > p:nth-child(1) {
     font-family: 'NeoVariable';
     font-weight: 900;
     font-size: 14px;
+    mix-blend-mode: difference;
 }
 
 header > .wrap > p:nth-child(3) {
     position: relative;
+    mix-blend-mode: difference;
 }
 
 header > .wrap > p:nth-child(3) > span {
@@ -198,6 +201,8 @@ main > .wrap > .main > .title > .title_wrap > .subtitle {
     font-size: 27px;
     margin-bottom: -43px;
     margin-left: 22px;
+    color: #ffffffb8 !important;
+    text-shadow: 0  0 5px black;
 }
 
 
@@ -205,15 +210,34 @@ main > .wrap > .main > .title > .title_wrap > .maintitle {
     font-family: 'MerriweatherBi';
     font-size: 14rem;
     text-align: center;
+    color: #ffffffb8;
+    text-shadow: 0 0 10px #00000036;
 }
 
 main > .wrap > .main > .title > .txt {
     margin:  auto;
     max-width: 550px;
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 39px;
-    color: rgb(138, 138, 138);
+    font-size: 1rem;
+    line-height: 43px;
+    color: #ffffff;
+    text-shadow: 0  0 5px black;
+}
+main > .wrap > .main > .title > .txt > a > span {
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: white;
+    padding: 8px 32px;
+    font-size: 0.9rem;    
+    text-shadow: none;
+}
+
+main > .wrap > .main > .title > .txt > a > span:hover {
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: black;
 }
 
 main > .wrap > .main > .scroll-icon {
@@ -576,7 +600,7 @@ main > .wrap > .card > .ani_bg {
     height: 1000px;
     background-color: #fff;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     flex-direction: column;
