@@ -1,11 +1,20 @@
 @charset "utf-8";
 
 
+@media screen and (max-width:1725px) {
+    .edit {
+        height: 1448px;
+    }
+}
+
 @media screen and (max-width:1530px) {
     .edit {
         height: 1300px;
     }
 }
+
+
+
 @media screen and (max-width:1000px) {
     html {
         overflow-y: auto !important;
