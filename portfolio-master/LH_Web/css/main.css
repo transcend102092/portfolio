@@ -1,0 +1,814 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UnDotum';
+    src: url(../font/UnDotum.ttf);
+}
+@font-face {
+    font-family: 'AppleGothic';
+    src: url(../font/AppleSDGothicNeoH.ttf);
+}
+@font-face {
+    font-family: 'AppleSDGothicNeoB';
+    src: url(../font/AppleSDGothicNeoB.ttf);
+}
+@font-face {
+    font-family: 'AppleSDGothicNeoSB';
+    src: url(../font/AppleSDGothicNeoSB.ttf);
+}
+@font-face {
+    font-family: 'AppleSDGothicNeoM';
+    src: url(../font//AppleSDGothicNeoM.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.clear::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-width: 280px;
+    font-family: 'Pretendard', '돋움', 'Dotum', '굴림', 'Gulim', 'AppleGothic', 'UnDotum', Arial, Tahoma, Verdana, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #111;
+    letter-spacing: -.5px;
+}
+
+.totalHeader {
+    position: relative;
+    max-width: 92rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-bottom: 0;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    min-height: calc(100vh - 11rem);
+    overflow: hidden;
+}
+
+.logo {
+    line-height: 4.5rem;
+    min-width: 8rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo > a > img {
+    font-size: 0;
+    vertical-align: middle;
+    border: 0;
+}
+
+.slogan {
+    width: 100%;
+    text-align: center;
+    line-height: 1.3;
+    padding-top: 0.5rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 2rem;
+    font-family: 'mariburi';
+    margin-bottom: 1.5rem;
+}
+
+.slogan img {
+    width: auto;
+    height: auto;
+}
+
+.slogan .slo_svg {
+    width: auto;
+    height: 3rem;
+    margin: -0.5rem 0.5rem 0;
+}
+
+.mainSearch {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form, fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.mainSearch fieldset {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.blind, legend, .hid, hr {
+    position: absolute !important;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.mainSearch .inner {
+    position: relative;
+    z-index: 1;
+}
+
+.mainSearch input[type="search"] {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 0;
+    padding: 0 2.5rem 0 1rem;
+    font-size: 0.85rem;
+    border: 1.5px solid #bc2649;
+    border-radius: 35px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.mainSearch .inner .searchBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+body .wrap #header section.section01 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 82rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.cont_wrap {
+    position: relative;
+    width: calc(98% - 16rem);
+    margin-right: 2%;
+    float: left;
+}
+
+.main_link {
+    position: relative;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.main_link ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 19rem;
+}
+
+.main_link li:nth-child(odd) {
+    top: 2.5rem;
+}
+.main_link li {
+    position: relative;
+    flex: 1;
+    top: 1.5rem;
+    transition: all .2s;
+}
+.main_link li a {
+    position: relative;
+    display: block;
+}
+.main_link li.apply a p {
+    background-color: #f0dbd4;
+}
+
+.main_link ul li a span {
+    font-family: 'Arial';
+    font-style: normal !important;
+}
+
+.main_link li a p {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 17.5rem;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position: 6rem 670%, -7rem 370%;
+    background-image: url(https://apply.lh.or.kr/images/web/main/main/bg_circle1.png), url(https://apply.lh.or.kr/images/web/main/main/bg_circle2.png);
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.main_link li a p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.main_link li.apply a p:before {
+    background: url(https://apply.lh.or.kr/images/web/main/main/img_link_apply.png) no-repeat center/cover;
+}
+
+.main_link li p:before {
+    transition: all .3s .1s;
+}
+
+.main_link li a p strong {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'AppleSDGothicNeoM';
+    color: #111111;
+}
+
+address, em, i {
+    font-style: normal;
+}
+
+.main_link li, .main_link li span, .main_link li span:before {
+    transition: all .2s;
+}
+
+.main_link li a span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1rem 4.5rem 1rem 1.5rem;
+    border-radius: 1rem 0;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.05);
+    background: #fff;
+    z-index: 2;
+}
+
+.main_link li a span em {
+    font-family: 'AppleSDGothicNeoM';
+}
+.main_link li.apply a span:before {
+    background: #cd8369;
+}
+.main_link li a span:before {
+    content: "";
+    position: absolute;
+    right: 0.8rem;
+    top: calc(50% - 0.5rem);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.main_link li a span:after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 7px);
+    width: 47px;
+    height: 13px;
+    margin-left: 1rem;
+    background: url(https://apply.lh.or.kr/images/web/main/main/ico_arrow.png) no-repeat center right;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+
+.main_link li.pre a p {
+    background-color: #ecd5ba;
+}
+.main_link li.pre a p:before {
+    background: url(https://apply.lh.or.kr/images/web/main/main/img_link_pre.png) no-repeat center/cover;
+}
+.main_link li.pre a span:before {
+    background: #d5b084;
+}
+
+
+.main_link li.land a p {
+    background-color: #eadcde;
+}
+.main_link li.land a p:before {
+    background: url(https://apply.lh.or.kr/images/web/main/main/img_link_land.png) no-repeat center/cover;
+}
+.main_link li.land a span:before {
+    background: #b38d91;
+}
+
+
+.main_link li.mbr a p {
+    background-color: #dfe5ea;
+}
+.main_link li.mbr a p:before {
+    background: url(https://apply.lh.or.kr/images/web/main/main/img_link_mbr.png) no-repeat center/cover;
+}
+.main_link li.mbr a span:before {
+    background: #7495b2;
+}
+
+.main_link li + li {
+    margin-left: 1rem;
+}
+
+.main_link li a span strong {
+    display: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+
+/* on addClass */
+.main_link li.on {
+    top: 0;
+}
+.main_link li.on.apply a span {
+    background-color: #f0dbd4;
+}
+.main_link li.on.pre a span {
+    background-color: #ecd5ba;
+}
+.main_link li.on.land a span {
+    background-color: #eadcde;
+}
+.main_link li.on.mbr a span {
+    background-color: #dfe5ea;
+}
+.main_link li.on a span {
+    bottom: -3rem;
+    min-width: 11rem;
+    border-radius: 2rem 0;
+    font-size: 0;
+    padding: 2rem 5.25rem 2rem 1.5rem;
+}
+.main_link li.on a span:before {
+    right: 1.5rem;
+    top: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    transform: rotate(-135deg);
+}
+.main_link li.on a span strong {
+    display: inline;
+}
+.main_link li.on a span em {
+    display: none;
+}
+.main_link li.on a span:after {
+    right: 2.25rem;
+}
+.main_link li a span:after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 7px);
+    width: 47px;
+    height: 13px;
+    margin-left: 1rem;
+    background: url(https://apply.lh.or.kr/images/web/main/main/ico_arrow.png) no-repeat center right;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.main_link li.on a p:before {
+    top: 0;
+}
+
+
+
+
+.xi-search:before {
+    content: "\e97a";
+}
+
+.apply_schle {
+    position: relative;
+    width: 16rem;
+    float: right;
+    margin-top: 1.5rem;
+}
+
+.apply_schle .titWrap {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.apply_schle .titWrap h3 {
+    flex: 1;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'AppleSDGothicNeoM';
+}
+
+.apply_schle .btn_more {
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    font-size: .7rem;
+    color: #666;
+    font-family: 'AppleSDGothicNeoM';
+
+}
+
+.apply_schle a {
+    transition: all .2s;
+}
+
+.apply_schle .btn_more:after {
+    content: "\e913";
+    font-size: 1rem;
+    color: #1b1b1b;
+    vertical-align: middle;
+    margin-left: 0.15rem;
+    font-family: 'xeicon';
+}
+
+.apply_schle .lst {
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+    background: #ede9e9;
+}
+
+.apply_schle .lst h4 {
+    position: relative;
+    font-size: 0.9rem;
+    padding-left: 1.75rem;
+    margin-bottom: 0.25rem;
+    font-family: 'AppleSDGothicNeoM';
+}
+
+.apply_schle .lst h4:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: 'xeicon';
+    font-size: 0.75rem;
+    color: #fff;
+    background: #a39391;
+}
+
+.apply_schle .lst ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apply_schle .lst li {
+    width: calc(50% - 0.4rem);
+    margin: 0.2rem;
+}
+
+.apply_schle .lst li > a, .apply_schle .lst li > a span {
+    transition: all .2s;
+    font-family: 'AppleSDGothicNeoM';
+}
+
+.apply_schle .lst li > a {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    font-size: 0.75rem;
+    border: 2px solid #fff;
+    background: #fff;
+}
+
+.apply_schle .lst li > a p {
+    flex: 1;
+}
+
+.apply_schle .lst li > a span {
+    position: relative;
+    min-width: 2.5rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding-left: 0.25rem;
+    margin-left: 0.25rem;
+    text-align: right;
+}
+
+.apply_schle .lst li > a span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 50%;
+    border-left: 1px solid #ccc;
+}
+
+.apply_schle .lst .inner.ing h4:before {
+    content: "\e9c3";
+}
+
+.apply_schle .lst h4:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: 'xeicon';
+    font-size: 0.75rem;
+    color: #fff;
+    background: #a39391;
+}
+
+.apply_schle .lst .inner + .inner {
+    margin-top: 0.5rem;
+}
+
+.apply_schle .lst h4 {
+    position: relative;
+    font-size: 0.9rem;
+    padding-left: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.apply_schle .lst .inner.fin h4:before {
+    content: "\e91c";
+}
+.apply_schle .lst h4:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: 'xeicon';
+    font-size: 0.75rem;
+    color: #fff;
+    background: #a39391;
+}
+
+.apply_schle .btn_more:hover, .apply_schle .btn_more:focus, .apply_schle .btn_more:hover:after, .apply_schle .btn_more:focus:after {
+    color: #bc2649;
+}
+
+.apply_schle .lst li > a:hover span, .apply_schle .lst li > a:focus span {
+    color: #0055a2;
+}
+
+.apply_schle .lst li > a:hover, .apply_schle .lst li > a:focus {
+    border-color: #0055a2;
+}
+
+.sub_link ul li a {
+    font-family: 'AppleSDGothicNeoM';
+    font-size: 0.9rem;
+}
+
+.sub_link ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub_link li {
+    flex: 1;
+}
+
+.sub_link li a, .sub_link li a:after, .sub_link li a span {
+    transition: all .2s;
+}
+
+.sub_link li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-right: 1.5rem;
+    padding-right: 1rem;
+}
+
+.sub_link li a span:before {
+    content: "";
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    line-height: 1;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://apply.lh.or.kr/images/web/main/main/ico_sub_link.svg);
+}
+
+.sub_link li a span {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    background: #dfd7c8;
+    border: 2px solid #dfd7c8;
+    overflow: hidden;
+}
+
+.sub_link li a.rtho span:before {
+    background-position: -3.3rem 0;
+}
+
+.sub_link li a.silh span::before {
+    background-position: -2.2rem 0;
+}
+
+.sub_link li a.lad span::before {
+    background-position: 0 0;
+}
+
+.sub_link li a.sps span::before {
+    background-position: -1.1rem 0;
+}
+
+.sub_link li a.pch span::before {
+    background-position: -4.5rem 0;
+}
+
+.sub_link li a:after {
+    content: "\e93e";
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    font-family: 'xeicon';
+}
+
+.sub_link li a:hover span, .sub_link li a:focus span {
+    background: #fff;
+    border-color: #bc2649;
+}
+
+.sub_link li a:hover, .sub_link li a:focus {
+    color: #bc2649;
+}
+
+.sub_link li a:hover, .sub_link li a:focus {
+    color: #bc2649;
+}
+
+.sub_link li a:hover:after, .sub_link li a:focus:after {
+    right: -0.5rem;
+}
+
+#mainfooter .container {
+    display: flex;
+    padding: 0 1rem;
+}
+
+#mainfooter .ftBox {
+    position: relative;
+    flex: 1;
+    padding-left: 200px;
+}
+
+#mainfooter .ftBox .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: initial;
+    opacity: .7;
+}
+
+.logo {
+    line-height: 4.5rem;
+    min-width: 8rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#mainfooter .container .ftBox address span {
+    font-family: 'AppleSDGothicNeoM';
+    font-size: .85rem;
+}
+
+#mainfooter .container .ftBox .copyright {
+    font-family: 'AppleSDGothicNeoB';
+    font-size: .75rem;
+    color: #939393;
+}
+
+#mainfooter .callCenter {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background: url(https://apply.lh.or.kr/00_common/images/layout/ico_main_callcenter.png) no-repeat left top;
+}
+
+#mainfooter .callCenter h3 {
+    font-size: .85rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-right: 1rem;
+    letter-spacing: 0;
+    font-family: 'AppleSDGothicNeoM';
+}
+
+#mainfooter .callCenter h3 a {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #e61111;
+    font-family: 'AppleSDGothicNeoSB';
+}
+
+#mainfooter .callCenter p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+#mainfooter .callCenter p span {
+    display: inline-block;
+    margin: 0.15rem 0.3rem;
+    color: #444;
+}
+
+#mainfooter .callCenter p span em {
+    color: #e61111;
+}
+
+#mainfooter .callCenter .time {
+    font-family: 'AppleSDGothicNeoM';
+}
